@@ -6,19 +6,15 @@
  */
 
 module rod(r) {
-    intersection() {
-        translate([r-1.3,0,0.5]) {
-            rotate([0,45,0])
-            cylinder(h=6.7, $fn=60);
-            
-            translate([-0.75,-1,0])
-            cube([2.4,2,1]);
+    translate([r-1.3,0,0.8]) {
+        rotate([0,45,0])
+        cylinder(h=6.15, $fn=60);
         
-            translate([4.5,0,4])
-            cylinder(h=2.2,r1=0.9,r=2, $fn=60);
-        }
-        $translate([-50,-50])
-        cube([100,100,100]);
+        translate([-0.75,-1,0])
+        cube([2.6,2,1]);
+    
+        translate([4.12,0,3.6])
+        cylinder(h=2.2,r1=0.9,r=2, $fn=60);
     }
 }
 
@@ -64,6 +60,6 @@ module unit() {
 union() {
     unit();
    
-    translate([15.8,8.8,0])
-    unit();
+    translate([15.5,8.9,0])
+    unit();    
 };
