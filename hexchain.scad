@@ -86,4 +86,45 @@ module 6units() {
     unit();
 }
 
-6units();
+module 18units() {
+    6units();
+
+    translate([15.5*2,8.9*2,0])
+    unit();
+
+    translate([15.5,8.9*3,0])
+    unit();
+
+    translate([0,8.9*4,0])
+    unit();
+
+    translate([-15.5,8.9*3,0])
+    unit();
+    
+    translate([-15.5*2,8.9*2,0])
+    unit();
+
+    translate([-15.5*2,0,0])
+    unit();
+
+    translate([-15.5*2,-8.9*2,0])
+    unit();
+
+    translate([-15.5,-8.9*3,0])
+    unit();
+
+    translate([0,-8.9*4,0])
+    unit();
+
+    translate([15.5,-8.9*3,0])
+    unit();
+
+    translate([15.5*2,-8.9*2,0])
+    unit();
+
+    translate([15.5*2,0,0])
+    unit();
+}
+
+
+18units();
