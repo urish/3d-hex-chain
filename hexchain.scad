@@ -57,9 +57,33 @@ module unit() {
     loop(r);
 }
 
-union() {
+module 2units() {
     unit();
-   
+
     translate([15.5,8.9,0])
-    unit();    
-};
+    unit();
+}
+
+module 6units() {
+    unit();
+
+    translate([15.5,8.9,0])
+    unit();
+
+    translate([-15.5,8.9,0])
+    unit();
+
+    translate([15.5,-8.9,0])
+    unit();
+
+    translate([-15.5,-8.9,0])
+    unit();
+
+    translate([0,8.9 * 2,0])
+    unit();
+
+    translate([0,-8.9 * 2,0])
+    unit();
+}
+
+6units();
